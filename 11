@@ -1,0 +1,33 @@
+package ex_siva;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Ex11 {
+
+	public static void main(String[] args) {
+		try
+		{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter length of array");
+		int length=sc.nextInt();
+		int[] no=new int[length];
+		
+		System.out.println("enter numbers:");
+		for (int i=0;i<7;i++)
+		{
+			no[i]=sc.nextInt();
+			
+		}
+		Arrays.sort(no);
+		System.out.println("the sorted elements are:"+Arrays.toString(no));
+		
+		}
+		catch(ArrayIndexOutOfBoundsException ae)
+		{
+			System.out.println("enter valid numbers");
+		}
+	}
+}
+	
